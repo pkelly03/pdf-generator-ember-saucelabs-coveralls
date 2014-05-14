@@ -39,55 +39,84 @@ ul.plain {
 .text-entry {
     font-weight:bold;
 }
-.questionnaire {
-	clear: both;
-    .instruction {
-    	padding: 1em 0 1em 0;
-        font-weight: bold;
-        .text {
-            float: left;
-            width: 70%;
-            text-transform: uppercase;
-            text-align: right;
-            font-size: 80%;
-        }
-        .acknowledge {
-	        float: right;
-	        width: 15%;
-	        text-align: center;
-        }
-    }
-    
-    .document {
-    	clear: both;
-    	padding: 1em 0 1em 0;
-		.text {
-            float: left;
-            width: 70%;
-            .main-text {
-            	font-weight: bold;
-            }
-            .further-description {
-            	font-style: italic;
-           	}
-		}
-		.acknowledge {
-	        float: right;
-	        width: 15%;
-	        text-align: center;
-        }
-
-    }
-
-
-    .question-area {
+.questionairre-highlight {
+    background-color: #dec0e2;
+}
+.instruction {
+    padding: 1em 0 1em 0;
+    font-weight: bold;
+    .text {
         float: left;
         width: 70%;
+        text-transform: uppercase;
+        text-align: right;
+        font-size: 80%;
+    }
+    .acknowledge {
+        float: right;
+        width: 15%;
+        text-align: center;
+    }
+}
+
+
+.document-type {
+    clear: both;
+    padding-left: 1em;
+    background-color:#dee0e2;
+    line-height: 2em;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+.document-group {
+    border: 1px solid black;   
+}
+
+.document {
+    clear: both;
+    padding: 1em 0 1em 0;
+    .text {
+        float: left;
+        width: 70%;
+        // padding-left: 0.2em;
+        .main-text {
+            font-weight: bold;
+        }
+        .further-description {
+            font-style: italic;
+        }
+        .left {
+            float: left;
+        }
+        .right {
+            float: right;
+        }
+        .example {
+            padding-left: 1em;
+        }
+    }
+    .acknowledge {
+        float: right;
+        width: 15%;
+        text-align: center;
+    }
+}
+
+.questionnaire {
+    clear: both;
+    padding: 1em 0 1em 0;
+    .questionnaire-footer {
+        clear: both;
+        padding: 1em 0 1em 0;
+        .important {
+            font-weight: bold;
+        }
     }
     
-    .answer-area {
-        float: left;
-        width: 30%;
+    .document-list {
+       padding-left:1em; 
     }
-
+}
+.questionnaire-type-2 {
 }
