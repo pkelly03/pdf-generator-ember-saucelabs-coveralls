@@ -1,0 +1,51 @@
+@mixin no-bullets {
+  list-style: none;
+  li {
+    list-style-image: none;
+    list-style-type: none;
+    margin-left: 0px;
+  }
+}
+
+.block-container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+ul.plain {
+  color: #444;
+  @include no-bullets;
+}
+
+.two-col-col1 {
+	float: left;	
+	width: 49%;
+}
+
+.two-col-col2 {
+	float: right;	
+	width: 49%;
+}
+
+.three-col-col1 {
+	float: left;	
+	width: 27%;
+}
+
+.three-col-col2 {
+	float: left;	
+	width: 27%;
+}
+
+.three-col-col3 {
+	float: right;	
+}
+
+
+.labels {
+	text-align: right;
+}
+
+.text-entry {
+	font-weight:bold;
+}

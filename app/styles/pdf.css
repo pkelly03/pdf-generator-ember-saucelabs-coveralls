@@ -1,0 +1,190 @@
+html,body {
+    font-family: helvetica, sans-serif;
+}
+
+h1 {
+    padding: 32px 0 8px 0;
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+    padding: 0 0 8px 0;
+}
+
+h3 {
+    margin: 0;
+    padding: 4px 0 8px 0;
+    line-height: 1.5;
+}
+
+p {
+    padding: 0 0 6px 0;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+[role=banner] {
+    display: block;
+    margin: 0 0;
+    color: white;
+    background-color: #0B0C0C;
+    font-size: 30px;
+    padding: 8px 46px;
+    position: running(header);
+}
+
+[role=contentinfo] {
+    position: running(footer);
+}
+
+address {
+    padding-bottom: 16px;
+    padding-left: 16px;
+    font-style: normal;
+}
+
+address p {
+    padding: 0 0 2px 0;
+}
+
+input{
+    padding-left: 10px;
+}
+
+main {
+    display: block;
+    padding: 0 40px;
+}
+
+li {
+    display: list-item;
+    list-style-type: disc;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 8px 0;
+}
+
+th,
+td {
+    line-height: 1.25;
+    vertical-align: top;
+    padding: 0.7em 0.5em 0.7em 1em;
+}
+
+th {
+    line-height: 1.25;
+    text-align: left;
+    color: #0b0c0c;
+    background-color: #dee0e2;
+    border: 1px solid rgb(191, 193, 195);
+}
+
+td {
+    background-color: #eaedef;
+    border: dotted 1px #bfc1c3;
+}
+
+tr:nth-child(odd) td {
+    background-color: white;
+}
+
+.article {
+    padding-bottom: 16px;
+}
+
+.evidence div {
+    padding: 8px 40px 4px 40px;
+    font-size: 90%;
+}
+
+.evidence {
+    padding-top: 8px;
+}
+
+.evidence li {
+    padding: 0 0 16px 0;
+    vertical-align: text-top;
+    list-style-type: none;
+}
+
+.evidence li:before,
+.pdf-input:before {
+    content: '';
+    display: inline-block;
+    border: 1px solid black;
+    width: 16px;
+    height: 16px;
+    margin-right: 12px;
+}
+
+.visually_inline {
+    padding-left: 0;
+}
+
+.visually_inline li,
+.visually_inline p {
+    display: inline;
+}
+
+.visually_inline ul {
+    padding-left: 40px;
+    margin-top: 16px;
+}
+
+.visually_inline ul li {
+    display: list-item;
+}
+
+.repeated-block {
+    list-style-type: none;
+}
+
+.footer {
+    text-align:center;
+}
+
+
+@page {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 40px 0;
+    counter-increment: page;
+
+    @top-center {
+	    content: element(header);
+    }
+
+    @bottom-center {
+        content: element(footer);
+        text-align:center;
+        font-size: 90%;
+        border-top: 1px solid #A1ACB2;
+        font-family: helvetica, sans-serif;
+    }
+
+    @bottom-left {
+        font-size: 90%;
+        border-top: 1px solid #A1ACB2;
+        font-family: helvetica, sans-serif;
+        content: "";
+	}
+
+    @bottom-right {
+	font-size: 90%;
+	border-top: 1px solid #A1ACB2;
+	font-family: helvetica, sans-serif;
+	content: "Page " counter(page)" of " counter(pages);
+	padding: 0 10px;
+    }
+}
+
+@page :first {
+    padding: 0;
+}

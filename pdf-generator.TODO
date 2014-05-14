@@ -1,5 +1,9 @@
 Whats next:
  ☐ Add istanbul support
+ ☐ Get first page of template going
  ☐ Push to coveralls
- ☐ Add Travis support
+ ☐ Saucelabs support
+ ☐ Bring in your maven project to get saucelabs support
+ ☐ Investigate the saucelabs javascript curl support
+ ✔ Add Travis support @done (14-05-14 11:39)
  ☐ Push to digital ocean

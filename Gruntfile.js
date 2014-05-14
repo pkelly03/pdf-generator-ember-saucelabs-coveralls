@@ -26,6 +26,22 @@ module.exports = function(grunt) {
         dist: 'dist'
     };
 
+    var browsers = [{
+        browserName: "firefox",
+        version: "19",
+        platform: "XP"
+    }, {
+        browserName: "chrome",
+        platform: "XP"
+    }, {
+        browserName: "chrome",
+        platform: "linux"
+    }, {
+        browserName: "internet explorer",
+        platform: "WIN8",
+        version: "10"
+    }];
+
     grunt.initConfig({
         yeoman: yeomanConfig,
         watch: {
@@ -53,6 +69,20 @@ module.exports = function(grunt) {
                 ]
             }
         },
+        saucelabs: {
+            all: {
+                options: {
+                    urls: ['http://localhost:<%= connect.options.port %>/index.html'],
+                    tunnelTimeout: 5,
+                    build: process.env.TRAVIS_JOB_ID,
+                    concurrency: 3,
+                    browsers: browsers,
+                    testname: "mocha tests",
+                    tags: ["master"]
+                }
+            }
+        },
+
         connect: {
             options: {
                 port: 9000,
@@ -377,6 +407,7 @@ module.exports = function(grunt) {
         'replace:app',
         'concurrent:test',
         'connect:test',
+        // 'saucelabs',
         'neuter:app',
         'mocha'
     ]);
