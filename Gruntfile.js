@@ -366,6 +366,11 @@ module.exports = function (grunt) {
         'mocha'
     ]);
 
+    grunt.registerTask('travis', [
+        'jshint',
+        'test'
+    ]);
+
     grunt.registerTask('build', [
         'clean:dist',
         'replace:dist',
