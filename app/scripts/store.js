@@ -1,0 +1,1 @@
+PdfGeneratorEmber.ApplicationAdapter = DS.FixtureAdapter;
