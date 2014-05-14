@@ -1,51 +1,93 @@
 @mixin no-bullets {
-  list-style: none;
-  li {
-    list-style-image: none;
-    list-style-type: none;
-    margin-left: 0px;
-  }
+    list-style: none;
+    li {
+        list-style-image: none;
+        list-style-type: none;
+        margin-left: 0px;
+    }
 }
-
-.block-container {
-  width: 960px;
-  margin: 0 auto;
-}
-
 ul.plain {
-  color: #444;
-  @include no-bullets;
+    color: #444;
+    @include no-bullets;
 }
-
+.block-container {
+    width: 960px;
+    margin: 0 auto;
+}
 .two-col-col1 {
-	float: left;	
-	width: 49%;
+    float: left;
+    width: 49%;
 }
-
 .two-col-col2 {
-	float: right;	
-	width: 49%;
+    float: right;
+    width: 49%;
 }
-
 .three-col-col1 {
-	float: left;	
-	width: 27%;
+    float: left;
+    width: 27%;
 }
-
 .three-col-col2 {
-	float: left;	
-	width: 27%;
+    float: left;
+    width: 27%;
 }
-
 .three-col-col3 {
-	float: right;	
+    float: right;
 }
-
-
 .labels {
-	text-align: right;
+    text-align: right;
 }
-
 .text-entry {
-	font-weight:bold;
+    font-weight:bold;
+}
+.questionnaire {
+	clear: both;
+    .instruction {
+    	padding: 1em 0 1em 0;
+        font-weight: bold;
+        .text {
+            float: left;
+            width: 70%;
+            text-transform: uppercase;
+            text-align: right;
+            font-size: 80%;
+        }
+        .acknowledge {
+	        float: right;
+	        width: 15%;
+	        text-align: center;
+        }
+    }
+    
+    .document {
+    	clear: both;
+    	padding: 1em 0 1em 0;
+		.text {
+            float: left;
+            width: 70%;
+            .main-text {
+            	font-weight: bold;
+            }
+            .further-description {
+            	font-style: italic;
+           	}
+		}
+		.acknowledge {
+	        float: right;
+	        width: 15%;
+	        text-align: center;
+        }
+
+    }
+
+
+    .question-area {
+        float: left;
+        width: 70%;
+    }
+    
+    .answer-area {
+        float: left;
+        width: 30%;
+    }
+
 }
