@@ -383,7 +383,8 @@ module.exports = function(grunt) {
 
     grunt.registerTask('travis', [
         'jshint',
-        'test'
+        'connect:test',
+        'mocha'
     ]);
 
     grunt.registerTask('build', [
