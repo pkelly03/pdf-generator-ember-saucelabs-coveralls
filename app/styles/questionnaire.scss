@@ -58,6 +58,32 @@ ul.plain {
     text-align: right;
 }
 
+.u-with-ticker {
+    tr {
+        td:nth-of-type(2),
+        td:nth-of-type(3) {
+
+            position: relative;
+
+            &:before {
+                content: '';
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                border: 1px solid black;
+                top: 16px;
+                left: 40%; 
+            }
+        }
+    }
+}
+
+table {
+    h4 {
+        margin: 0 0 4px 0;
+    }
+}
+
 .photo {
 
     font-size: 75%;
