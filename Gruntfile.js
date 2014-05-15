@@ -19,7 +19,7 @@ module.exports = function(grunt) {
     require('time-grunt')(grunt);
     // load all grunt tasks
     require('load-grunt-tasks')(grunt);
-
+    grunt.loadNpmTasks('grunt-blanket-mocha');
     // configurable paths
     var yeomanConfig = {
         app: 'app',
@@ -156,6 +156,12 @@ module.exports = function(grunt) {
                     run: true,
                     urls: ['http://localhost:<%= connect.options.port %>/index.html']
                 }
+            }
+        },
+        blanket_mocha: {
+            all: ['test/index.html'],
+            options: {
+                threshold: 70
             }
         },
         compass: {
@@ -373,7 +379,7 @@ module.exports = function(grunt) {
                 // coveralls.io is down). Optional, defaults to false.
                 force: false
             },
-            your_target: {
+            test: {
                 // Target-specific LCOV coverage file
                 src: 'coverage-results/extra-results-*.info'
             },
@@ -409,7 +415,8 @@ module.exports = function(grunt) {
         'connect:test',
         // 'saucelabs',
         'neuter:app',
-        'mocha'
+        'mocha',
+        'coveralls:test'
     ]);
 
     grunt.registerTask('travis', [
