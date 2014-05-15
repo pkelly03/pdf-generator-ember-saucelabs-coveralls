@@ -5,6 +5,9 @@
         list-style-type: none;
         margin-left: 0px;
     }
+    li.title {
+        font-weight: bold;
+    }
 }
 ul.plain {
     color: #444;
@@ -39,10 +42,24 @@ ul.plain {
 .text-entry {
     font-weight:bold;
 }
-.questionairre-highlight {
+.questionnaire-type-1 {
+    clear: both;
+    padding: 1em 0 1em 0;
+    .questionnaire-footer {
+        clear: both;
+        padding: 1em 0 1em 0;
+        .important {
+            font-weight: bold;
+        }
+    }
+    .document-list {
+        padding-left:1em;
+    }
+}
+.questionnaire-highlight {
     background-color: #dec0e2;
 }
-.instruction {
+.questionnaire-instruction {
     padding: 1em 0 1em 0;
     font-weight: bold;
     .text {
@@ -58,8 +75,6 @@ ul.plain {
         text-align: center;
     }
 }
-
-
 .document-type {
     clear: both;
     padding-left: 1em;
@@ -68,11 +83,9 @@ ul.plain {
     font-weight: bold;
     border: 1px solid black;
 }
-
 .document-group {
-    border: 1px solid black;   
+    border: 1px solid black;
 }
-
 .document {
     clear: both;
     padding: 1em 0 1em 0;
@@ -102,21 +115,26 @@ ul.plain {
         text-align: center;
     }
 }
-
-.questionnaire {
-    clear: both;
-    padding: 1em 0 1em 0;
-    .questionnaire-footer {
-        clear: both;
-        padding: 1em 0 1em 0;
-        .important {
-            font-weight: bold;
+.declaration {
+    ul.square {
+        li {
+            margin-top: 1em
         }
     }
-    
-    .document-list {
-       padding-left:1em; 
+    .signature-group {
+        border: 1px solid black;
+        clear: both;
+        .date {
+            float: left;
+            width: 30%;
+        }
+        .name-print {
+            float: left;
+            width: 35%;
+        }
+        .name-signature {
+            float: left;
+            width: 35%;
+        }
     }
-}
-.questionnaire-type-2 {
 }
