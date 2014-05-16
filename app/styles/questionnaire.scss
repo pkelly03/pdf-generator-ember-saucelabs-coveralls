@@ -22,11 +22,59 @@
     }
 }
 
+@mixin ticker($size) {
+    position: relative;
+
+    &:before {
+        content: '';
+        width: $size;
+        height: $size;
+        position: absolute;
+        border: 1px solid black;
+        top: 16px;
+        left: 40%; 
+    }
+
+}
+
+@mixin line-entry($left) {
+    position: relative;
+
+    &:before {
+        content: '';
+        width: 85%;
+        position: absolute;
+        top: 17px;
+        left: $left; 
+        border-bottom: 1px solid black;
+    }
+}
+
 ul.plain {
     color: #444;
     @include no-bullets;
 }
 
+.u-three-columns {
+
+    @include clear-fix;
+
+    > div:nth-child(1) {
+        float: left;
+        width: 30%;
+    }
+    > div:nth-child(2) {
+        float: left;
+        width: 35%;
+    }
+    > div:nth-child(3) {
+        margin-left: 65%;
+    }
+
+    &.border {
+        border: 1px solid black;   
+    }
+}
 
 .u-two-columns {
 
@@ -58,6 +106,10 @@ ul.plain {
     text-align: right;
 }
 
+.u-ticker {
+    @include ticker(30px);
+}
+
 .u-with-ticker {
     tr {
         td:nth-of-type(2),
@@ -76,21 +128,12 @@ ul.plain {
             }
         }
     }
+}
 
-    &.line-entry {
-        td:nth-of-type(1) {
-            position: relative;
-
-            &:before {
-                content: '';
-                width: 85%;
-                position: absolute;
-                top: 17px;
-                left: 5%; 
-                border-bottom: 1px solid black;
-                line-height: 2em;
-            }
-        }
+.u-line-entry {
+    @include line-entry(0%);
+    &.with-five-percent-padding {
+        @include line-entry(5%)
     }
 }
 
@@ -195,35 +238,6 @@ table {
         right: -50px;
         top: 190px;
     }
-}
-
-
-
-
-.two-col-col1 {
-    float: left;
-    width: 49%;
-}
-.two-col-col2 {
-    float: right;
-    width: 49%;
-}
-.three-col-col1 {
-    float: left;
-    width: 27%;
-}
-.three-col-col2 {
-    float: left;
-    width: 27%;
-}
-.three-col-col3 {
-    float: right;
-}
-.labels {
-    text-align: right;
-}
-.text-entry {
-    font-weight:bold;
 }
 
 .priority {
