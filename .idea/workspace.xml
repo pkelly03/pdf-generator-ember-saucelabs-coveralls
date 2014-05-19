@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="48a90258-8dee-49f8-9402-3a2e12119147" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/application.hbs" afterPath="$PROJECT_DIR$/app/templates/application.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/questionnaire.scss" afterPath="$PROJECT_DIR$/app/styles/questionnaire.scss" />
     </list>
     <ignored path="pdf-generator-ember-saucelabs-coveralls.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -104,6 +103,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="FullScreen" value="false" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
   </component>

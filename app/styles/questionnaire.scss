@@ -123,6 +123,17 @@ table.no-borders-additional-spacing {
         @include line-entry(1%, 5px)
     }
 }
+
+.padded-box {
+    margin: 10px 0 30px 0;
+    padding: 10px;
+    border: 1px solid black;
+
+    >h4 {
+        font-weight: bold;
+    }
+}
+
 table {
     h4 {
         margin: 0 0 4px 0;
@@ -209,6 +220,7 @@ table {
         top: 190px;
     }
 }
+
 .priority {
     width: 50%;
     margin-left: 50%;
@@ -223,115 +235,12 @@ table {
         margin-right: 16px;
     }
 }
+
 .questionaire {
     td:nth-of-type(1) {
         text-align: right;
     }
     td:nth-of-type(2) {
         font-weight: bold;
-    }
-}
-.questionnaire-form {
-    clear: both;
-    padding: 1em 0 1em 0;
-    .questionnaire-footer {
-        clear: both;
-        padding: 1em 0 1em 0;
-        .important {
-            font-weight: bold;
-        }
-    }
-    .document-list {
-        padding-left:1em;
-    }
-}
-.document-description {
-    padding-left:1em;
-}
-.questionnaire-highlight {
-    background-color: #dec0e2;
-}
-.questionnaire-instruction {
-    padding: 1em 0 1em 0;
-    font-weight: bold;
-    .text {
-        float: left;
-        width: 70%;
-        text-transform: uppercase;
-        text-align: right;
-        font-size: 80%;
-    }
-    .acknowledge {
-        float: right;
-        width: 15%;
-        text-align: center;
-    }
-}
-.document-type {
-    clear: both;
-    padding-left: 1em;
-    background-color:#dee0e2;
-    line-height: 2em;
-    font-weight: bold;
-    border: 1px solid black;
-}
-.document-group {
-    border: 1px solid black;
-}
-.document {
-    clear: both;
-    padding: 1em 0 1em 0;
-    .text {
-        float: left;
-        width: 70%;
-        // padding-left: 0.2em;
-        .main-text {
-            font-weight: bold;
-        }
-        .further-description {
-            font-style: italic;
-        }
-        .left {
-            float: left;
-        }
-        .right {
-            float: right;
-        }
-        .example {
-            padding-left: 1em;
-        }
-    }
-    .acknowledge {
-        float: right;
-        width: 15%;
-        text-align: center;
-    }
-}
-#declaration {
-    ul.square {
-        li {
-            margin-top: 1em
-        }
-    }
-    .signature-group {
-        border: 1px solid black;
-        clear: both;
-        .date {
-            float: left;
-            width: 30%;
-        }
-        .name-print {
-            float: left;
-            width: 35%;
-        }
-        .name-signature {
-            float: left;
-            width: 35%;
-        }
-        .heading {
-            font-size: large;
-            font-weight: bold;
-            text-align: center;
-        }
     }
 }

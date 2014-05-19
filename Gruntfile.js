@@ -383,6 +383,14 @@ module.exports = function(grunt) {
                 // Target-specific LCOV coverage file
                 src: 'coverage-results/extra-results-*.info'
             },
+        },
+        ucss: {
+            target: {
+                pages: {
+                    crawl: 'http://localhost:9000'
+                },
+                css: ['http://localhost:9000/styles/questionnaire.css','http://localhost:9000/styles/pdf.css']
+            }
         }
     });
 
