@@ -41,7 +41,6 @@
         border-bottom: 1px solid black;
     }
 }
-
 table.no-borders-additional-spacing {
     background-color: white;
     th, td {
@@ -50,6 +49,16 @@ table.no-borders-additional-spacing {
         vertical-align: middle;
         padding: 2em;
         border: none;
+    }
+}
+table.u-with-tickers {
+    th, td {
+        background-color: white;
+        line-height: 2em;
+        border: 1px solid black;
+    }
+    h4 {
+        margin: 0 0 4px 0;
     }
 }
 
@@ -98,22 +107,6 @@ table.no-borders-additional-spacing {
 .u-ticker {
     @include ticker(30px);
 }
-.u-with-ticker {
-    tr {
-        td:nth-of-type(2), td:nth-of-type(3) {
-            position: relative;
-            &:before {
-                content:'';
-                width: 30px;
-                height: 30px;
-                position: absolute;
-                border: 1px solid black;
-                top: 16px;
-                left: 40%;
-            }
-        }
-    }
-}
 .u-line-entry {
     @include line-entry(0%, 17px);
     &.with-custom-positioning-2 {
@@ -123,20 +116,12 @@ table.no-borders-additional-spacing {
         @include line-entry(1%, 5px)
     }
 }
-
 .padded-box {
     margin: 10px 0 30px 0;
     padding: 10px;
     border: 1px solid black;
-
     >h4 {
         font-weight: bold;
-    }
-}
-
-table {
-    h4 {
-        margin: 0 0 4px 0;
     }
 }
 .photo {
@@ -220,7 +205,6 @@ table {
         top: 190px;
     }
 }
-
 .priority {
     width: 50%;
     margin-left: 50%;
@@ -235,7 +219,6 @@ table {
         margin-right: 16px;
     }
 }
-
 .questionaire {
     td:nth-of-type(1) {
         text-align: right;
