@@ -1,9 +1,15 @@
 Whats next:
- ☐ Add istanbul support
- ☐ Get first page of template going
- ☐ Push to coveralls
- ☐ Saucelabs support
- ☐ Bring in your maven project to get saucelabs support
- ☐ Investigate the saucelabs javascript curl support
+ ☐ Look at getting an image for the pdf, do this yourself and incorporate into spike
+ ☐ Get images going on the main app
+ ☐ Get barcode into spike - <div class="article"><img style="width:255px; height:79px" src={barcodeUrl} /></div>
+ ☐ Run glyphicons by mike 
+ ☐ Page break stuff - whats the story with it
+
+ ✔ Add istanbul support @done (14-05-20 14:14)
+ ✔ Get first page of template going @done (14-05-20 14:14)
+ ✔ Push to coveralls @done (14-05-20 14:14)
+ ✔ Saucelabs support @done (14-05-20 14:14)
+ ✔ Bring in your maven project to get saucelabs support @done (14-05-20 14:14)
+ ✔ Investigate the saucelabs javascript curl support @done (14-05-20 14:14)
  ✔ Add Travis support @done (14-05-14 11:39)
- ☐ Push to digital ocean
+ ✔ Push to digital ocean @done (14-05-20 14:14)
