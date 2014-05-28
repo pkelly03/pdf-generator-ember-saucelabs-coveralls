@@ -1,39 +1,36 @@
-<header class="header" role="banner">
-    UK Visas &amp; Immigration
-    <div class="article"><img style="width:255px; height:79px" src="images/barcode.jpg" /></div>
-</header>
+<header class="header" role="banner">{Messages("coverSheet.outOfCountry.title")}</header>
 <div>
-    <h1>Document Checklist</h1>
+<h1>{Messages("coverSheet.outOfCountry.checklist.title")}</h1>
         
     <div class="article">
-        <p>This checklist:</p>
-        <ul>
-            <li>describes the visa you have applied for;</li>
-            <li>is used to record the documents you are providing in support of your application</li>
-        </ul>
-        <p>You will be asked to sign this checklist to confirm you have provided the documents listed and understand how your application will be dealt with.</p>
-        <div class="priority"><span>Priority:</span>Standard</div>
-    </div>    
+    <p>{Messages("coverSheet.outOfCountry.checklist.info.title")}</p>
+    <ul>
+        <li>{Messages("coverSheet.outOfCountry.checklist.info.bulletPoint1")}</li>
+        <li>{Messages("coverSheet.outOfCountry.checklist.info.bulletPoint2")}</li>
+    </ul>
+    <p>{Messages("coverSheet.outOfCountry.checklist.info.text")}</p>
+    <div class="priority"><span>{Messages("coverSheet.outOfCountry.priority.title")}</span>{serviceAddOn}</div>
+</div>
     
-    <div class="article">
-        <h3>Product</h3>
+<div class="article">
+    <h3>{Messages("coverSheet.outOfCountry.product.title")}</h3>
         <table class="questionaire">
             <tbody>
                 <tr>
-                    <td>Category:</td>
-                    <td>Visit Visa - Business Visitor</td>
+                    <td>{Messages("coverSheet.outOfCountry.product.table.title")}</td>
+                    <td>{product.title}</td>
                 </tr>
                 <tr>
-                    <td>Validity period / Duration/Length of Visa:</td>
-                    <td>2 years</td>
+            <td>{Messages("coverSheet.outOfCountry.product.period")}</td>
+            <td>{application.visaLength()}</td>
                 </tr>
                 <tr>
-                    <td>Payment notification number:</td>
-                    <td>2JCA000202325</td>
+            <td>{Messages("coverSheet.outOfCountry.payment.title")}</td>
+            <td>{context.paymentReferenceNumbers.mkString(", ")}</td>
                 </tr>
                 <tr>
-                    <td>Fee Paid:</td>
-                    <td>1000 RMB / CNY</td>
+            <td>{Messages("coverSheet.outOfCountry.fee.title")}</td>
+            <td>{s"${fee.total} ${fee.currencyCode}"}</td>
                 </tr>
                 <tr>
                     <td>Date Paid:</td>
@@ -45,7 +42,7 @@
 
     <div class="article">
         <h3>Applicant</h3>
-        <div class="u-two-columns sixty-fourty">
+        <div class="u-two-columns seventy-thirty">
             <div>
                 <table class="questionaire">
                     <tbody>
@@ -90,90 +87,14 @@
             </div>
             <div>
                 <div class="photo">
+                    <div id="picture"></div>
+                    <div id="totalWidth">35mm</div>
+                    <div id="totalHeight">45mm</div>
+                    <div id="maxHeight">No more than 34mm</div>
+                    <div id="minHeight">At least 29mm</div>
                 </div>
             </div>
         </div>
-    </div>
-    
-    <div>
-        <h1>DUPLICATED CLASS FREE Documents</h1>
-        <h3>DUPLICATED CLASS FREE Documents</h3>
-        <p>All documents must be originals.</p>
-        <p>You have agreed to include the following documents in your application.</p>
-        <p>Please tick the box beside each document to confirm that you are providing that document:</p>
-
-        <!-- <table class="u-with-tickers"> -->
-        <table>
-            <colgroup>
-                <col>
-                <col style="width: 200px;">
-                <col style="width: 200px;">
-            </colgroup>
-            <thead>
-                <tr>
-                    <th >Please tick to indicate the documents provided</th>
-                    <th >
-                        <div>Applicant</div>
-                        <div><i class="u-icon-ok"></i></div>
-                    </th>
-                    <th >
-                        <div>Official Use Only</div>
-                        <div><i class="u-icon-ok "></i></div>
-                    </th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>
-                        <h4>Current/Valid Passport/Travel Document for Mr Dermot Browne</h4>
-                        <p>Your passport should be complete and undamaged.  It must have a page that is blank on both sides (so that your Visa can be attached).  And it must not expire before your visit to the UK.</p>
-                    </td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>
-                        <h4>A Passport photo for Mr Dermot Browne</h4>
-                        <p>Photo should have been taken within the last 6 months. There are rules about what your photograph should look like. To find out more about these rules, go to :  https://www.gov.uk/photos-for-passports</p>
-                    </td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>
-                        <p>A. N. Other document as indicated while completing application. (Would be shown on ‘Documents’ block.)</p>
-                    </td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>
-                        <p>A. N. Other document as indicated while completing application. (Would be shown on ‘Documents’ block.)</p>
-                    </td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>
-                        <p>A. N. Other document as indicated while completing application. (Would be shown on ‘Documents’ block.)</p>
-                    </td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </tbody>
-        </table>
-    
-        <p>If you do not provide your current passport and a passport photograph we will not be able to make a decision on your application. Please note that we may ask you to provide further documents at a later date. If you have a previous UK Visa in an old passport then please provide this passport also.</p>
-    
-        <p>You <span class="important">may</span> provide any documents in support of your application:</p>
-        <ul>
-            <li>All documents must be in English. Translated documents must be authorised;</li>
-            <li>Originals of documents must be provided;</li>
-            <li>Copies of each document must be provided so that they can be retained and the originals
-                can be returned to you.
-            </li>
-        </ul>
-        <p>Further guidance is available at <a href="http://www.gov.uk/visas-immigration">www.gov.uk/visas-immigration</a></p>
     </div>
     
     <div class="article">
@@ -182,8 +103,7 @@
         <p>You have agreed to include the following documents in your application.</p>
         <p>Please tick the box beside each document to confirm that you are providing that document:</p>
 
-        <!-- <table class="u-with-tickers"> -->
-        <table>
+        <table class="u-with-tickers">
             <colgroup>
                 <col>
                 <col style="width: 200px;">
@@ -194,11 +114,11 @@
                     <th class="u-right">Please tick to indicate the documents provided</th>
                     <th class="u-centre">
                         <div>Applicant</div>
-                        <div><i class="u-icon-ok"></i></div>
+                        <div >&#10003;</div>
                     </th>
                     <th class="u-centre">
                         <div>Official Use Only</div>
-                        <div><i class="u-icon-ok "></i></div>
+                        <div >&#10003;</div>
                     </th>
                 </tr>
             </thead>
@@ -208,7 +128,7 @@
                         <h4>Current/Valid Passport/Travel Document for Mr Dermot Browne</h4>
                         <p>Your passport should be complete and undamaged.  It must have a page that is blank on both sides (so that your Visa can be attached).  And it must not expire before your visit to the UK.</p>
                     </td>
-                    <td class="u-ticker"></td>
+                    <td class="u-ticker"><br></td>
                     <td class="u-ticker"></td>
                 </tr>
                 <tr>
@@ -268,11 +188,11 @@
                     <th class="u-right">Please tick to indicate the documents provided</th>
                     <th class="u-centre">
                         <div>Applicant</div>
-                        <div><i class="u-icon-ok"></i></div>
+                        <div >&#10003;</div>
                     </th>
                     <th class="u-centre">
                         <div>Official Use Only</div>
-                        <div ><i class="u-icon-ok"></i></div>
+                        <div >&#10003;</div>
                     </th>
                 </tr>
             </thead>
@@ -425,11 +345,11 @@
                 <th class="u-right">Please tick to indicate the documents provided</th>
                 <th class="u-centre">
                     <div>Applicant</div>
-                    <div ><i class="u-icon-ok"></i></div>
+                    <div >&#10003;</div>
                 </th>
                 <th class="u-centre">
                     <div>Official Use Only</div>
-                    <div ><i class="u-icon-ok"></i></div>
+                    <div >&#10003;</div>
                 </th>
             </tr>
             </thead>

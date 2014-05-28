@@ -1,0 +1,280 @@
+<header class="header" role="banner">{Messages("coverSheet.outOfCountry.title")}</header>
+<div>
+<h1>{Messages("coverSheet.outOfCountry.checklist.title")}</h1>
+
+<div class="article">
+    <p>{Messages("coverSheet.outOfCountry.checklist.info.title")}</p>
+    <ul>
+        <li>{Messages("coverSheet.outOfCountry.checklist.info.bulletPoint1")}</li>
+        <li>{Messages("coverSheet.outOfCountry.checklist.info.bulletPoint2")}</li>
+    </ul>
+    <p>{Messages("coverSheet.outOfCountry.checklist.info.text")}</p>
+    <div class="priority"><span>{Messages("coverSheet.outOfCountry.priority.title")}</span>{serviceAddOn}</div>
+</div>
+<div class="article">
+    <h3>{Messages("coverSheet.outOfCountry.product.title")}</h3>
+        <table class="questionaire">
+            <tbody>
+                <tr>
+            <td>{Messages("coverSheet.outOfCountry.product.table.title")}</td>
+            <td>{product.title}</td>
+        </tr>
+        <tr>
+            <td>{Messages("coverSheet.outOfCountry.product.period")}</td>
+            <td>{application.visaLength()}</td>
+        </tr>
+        <tr>
+            <td>{Messages("coverSheet.outOfCountry.payment.title")}</td>
+            <td>{context.paymentReferenceNumbers.mkString(", ")}</td>
+        </tr>
+        <tr>
+            <td>{Messages("coverSheet.outOfCountry.fee.title")}</td>
+            <td>{s"${fee.total} ${fee.currencyCode}"}</td>
+        </tr>
+        <tr>
+            <td>{Messages("coverSheet.outOfCountry.datePaid.title")}</td>
+            <td>{paymentFormat(context.submissionDate)}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="article">
+    <h3>{Messages("coverSheet.outOfCountry.applicant.title")}</h3>
+
+    <div class="u-two-columns seventy-thirty">
+        <div>
+            <table class="questionaire">
+                <tbody>
+                <tr>
+                    <td>{Messages("coverSheet.outOfCountry.applicant.name.title")}</td>
+                    <td>{application.fullName(referenceDataService)}</td>
+                </tr>
+                <tr>
+                    <td>{Messages("coverSheet.outOfCountry.applicant.dob.title")}</td>
+                    <td>{birthDetails.map(_.dateOfBirth.asString).getOrElse("")}</td>
+                </tr>
+                <tr>
+                    <td>{Messages("coverSheet.outOfCountry.applicant.placeOfBirth.title")}</td>
+                    <td>{birthDetails.map(bd => referenceDataService.completeCountriesListing(bd.placeOfBirth)).getOrElse("")}</td>
+                </tr>
+                <tr>
+                    <td>{Messages("coverSheet.outOfCountry.applicant.nationality.title")}</td>
+                    <td>{birthDetails.map(_.nationalityRefs.map(bd => referenceDataService.nationalities(bd)).mkString(", ")).getOrElse("")}</td>
+                </tr>
+                <tr>
+                    <td>{Messages("coverSheet.outOfCountry.applicant.travelDocument.title")}</td>
+                    <td>{application(TravelDocumentIssueDetails).map(_.travelDocumentNumber).getOrElse("")}</td>
+                </tr>
+                {telephoneNumberHtml(phoneNumbers.map(_.toString))}
+                <tr>
+                    <td>{Messages("coverSheet.outOfCountry.applicant.email.title")}</td>
+                    <td>{application.contactEmail}</td>
+                </tr>
+                <tr>
+                    <td>{Messages("coverSheet.outOfCountry.submissionDate.title")}</td>
+                    <td>{pdfFormat(context.submissionDate)}</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <div class="photo">
+                <div id="picture"></div>
+                <div id="totalWidth">{Messages("coverSheet.outOfCountry.photo.totalWidth")}</div>
+                <div id="totalHeight">{Messages("coverSheet.outOfCountry.photo.totalHeight")}</div>
+                <div id="maxHeight">{Messages("coverSheet.outOfCountry.photo.maxHeight")}</div>
+                <div id="minHeight">{Messages("coverSheet.outOfCountry.photo.minHeight")}</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="article">
+    <h3>{Messages("coverSheet.outOfCountry.documents.title")}</h3>
+    <p>{Messages("coverSheet.outOfCountry.documents.text1")}</p>
+    <p>{Messages("coverSheet.outOfCountry.documents.text2")}</p>
+    <p>{Messages("coverSheet.outOfCountry.documents.text3")}</p>
+    { if (supportingEvidenceKinds.hasDefiniteSize)
+    <table class="u-with-tickers">
+        <colgroup>
+            <col style="width: 200px;"/>
+            <col style="width: 200px;"/>
+            <col/>
+        </colgroup>
+        <thead>
+        <tr>
+            <th class="u-right">{Messages("coverSheet.outOfCountry.documentsProvided.title")}</th>
+            <th class="u-centre">
+                <div>{Messages("coverSheet.outOfCountry.applicant.title")}</div>
+                <div>{Messages("coverSheet.outOfCountry.tick")}</div>
+            </th>
+            <th class="u-centre">
+                <div>{Messages("coverSheet.outOfCountry.officialUse.title")}</div>
+                <div>{Messages("coverSheet.outOfCountry.tick")}</div>
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+        {supportingEvidenceRows(supportingEvidenceKinds)}
+        </tbody>
+    </table>
+    }
+    <p>{Messages("coverSheet.outOfCountry.supportingDocuments.disclaimer")}</p>
+    <p>{Messages("coverSheet.outOfCountry.supportingDocuments.title")}</p>
+    <ul>
+        <li>{Messages("coverSheet.outOfCountry.supportingDocuments.bulletPoint1")}</li>
+        <li>{Messages("coverSheet.outOfCountry.supportingDocuments.bulletPoint2")}</li>
+        <li>{Messages("coverSheet.outOfCountry.supportingDocuments.bulletPoint3")}</li>
+    </ul>
+    <p>{Messages("coverSheet.outOfCountry.supportingDocuments.guidance")} <a href={Messages("coverSheet.outOfCountry.supportingDocuments.href")}>{Messages("coverSheet.outOfCountry.supportingDocuments.url")}</a>
+    </p>
+</div>
+<!-- TODO: EDA put back in the other docs  -->
+<div class="article">
+    <table class="line-entry">
+        <colgroup>
+            <col style="width: 200px;"/>
+            <col style="width: 200px;"/>
+            <col/>
+        </colgroup>
+        <thead>
+        <tr>
+            <th class="u-right">{Messages("coverSheet.outOfCountry.documentProvided.title")}</th>
+            <th class="u-centre">
+                <div>{Messages("coverSheet.outOfCountry.applicant.title")}</div>
+                <div>{Messages("coverSheet.outOfCountry.tick")}</div>
+            </th>
+            <th class="u-centre">
+                <div>{Messages("coverSheet.outOfCountry.officialUse.title")}</div>
+                <div>{Messages("coverSheet.outOfCountry.tick")}</div>
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div class="article">
+    <h3>{Messages("coverSheet.outOfCountry.declaration.title")}</h3>
+
+    <p>{Messages("coverSheet.outOfCountry.declaration.text")}</p>
+    <table>
+        <colgroup>
+            <col style="width: 200px;"/>
+            <col/>
+            <col/>
+        </colgroup>
+        <tbody>
+        <tr>
+            <td class="u-ticker"></td>
+            <td>{Messages("coverSheet.outOfCountry.declaration.para1")}</td>
+        </tr>
+        <tr>
+            <td class="u-ticker"></td>
+            <td>{Messages("coverSheet.outOfCountry.declaration.para2")}</td>
+        </tr>
+        <tr>
+            <td class="u-ticker"></td>
+            <td>{Messages("coverSheet.outOfCountry.declaration.para3")}</td>
+        </tr>
+        </tbody>
+    </table>
+    <p></p>
+    <table>
+        <colgroup>
+            <col style="width: 200px;"/>
+            <col/>
+            <col/>
+        </colgroup>
+        <thead>
+        <tr>
+            <th>{Messages("coverSheet.outOfCountry.endOfDoc.date")}</th>
+            <th>{Messages("coverSheet.outOfCountry.endOfDoc.applicantName")}</th>
+            <th>{Messages("coverSheet.outOfCountry.endOfDoc.applicantSignature")}</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="u-line-entry"></td>
+            <td class="u-line-entry"></td>
+            <td class="u-line-entry"></td>
+        </tr>
+        </tbody>
+    </table>
+    <p>Or</p>
+    <table>
+        <colgroup>
+            <col style="width: 200px;"/>
+            <col/>
+            <col/>
+        </colgroup>
+        <thead>
+        <tr>
+            <th>{Messages("coverSheet.outOfCountry.endOfDoc.date")}</th>
+            <th>{Messages("coverSheet.outOfCountry.endOfDoc.responsibleAdultName")}</th>
+            <th>{Messages("coverSheet.outOfCountry.endOfDoc.responsibleAdultSignature")}</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="u-line-entry"></td>
+            <td class="u-line-entry"></td>
+            <td class="u-line-entry"></td>
+        </tr>
+        </tbody>
+    </table>
+    <p></p>
+    <table>
+        <colgroup>
+            <col style="width: 200px;"/>
+            <col/>
+            <col/>
+        </colgroup>
+        <thead>
+        <tr>
+            <th>{Messages("coverSheet.outOfCountry.endOfDoc.date")}</th>
+            <th>{Messages("coverSheet.outOfCountry.endOfDoc.officerName")}</th>
+            <th>{Messages("coverSheet.outOfCountry.endOfDoc.officerSignature")}</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="u-line-entry"></td>
+            <td class="u-line-entry"></td>
+            <td class="u-line-entry"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</div>

@@ -1,0 +1,763 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Untitled</title>
+
+    <link rel="author" href="humans.txt" />
+
+    <style type="text/css">
+html,body {
+    font-family: helvetica, sans-serif;
+}
+
+h1 {
+    padding: 32px 0 8px 0;
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+    padding: 0 0 8px 0;
+}
+
+h3 {
+    margin: 0;
+    padding: 4px 0 8px 0;
+    line-height: 1.5;
+}
+
+p {
+    padding: 0 0 6px 0;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+table.u-with-tickers tr td{
+background-color: purple;
+border: 10px dashed black;
+}
+
+table.u-with-tickers tr td:nth-of-type(1){
+background-color: cyan;
+}
+table.u-with-tickers tr td:nth-of-type(2){
+background-color: pink;
+}
+table.u-with-tickers tr td:nth-of-type(3){
+background-color: yellow;
+}
+
+
+[role=banner] {
+    display: block;
+    margin: 0 0;
+    color: white;
+    background-color: #0B0C0C;
+    font-size: 30px;
+    padding: 8px 46px;
+    position: running(header);
+}
+
+[role=contentinfo] {
+    position: running(footer);
+}
+
+address {
+    padding-bottom: 16px;
+    padding-left: 16px;
+    font-style: normal;
+}
+
+address p {
+    padding: 0 0 2px 0;
+}
+
+input{
+    padding-left: 10px;
+}
+
+main {
+    display: block;
+    padding: 0 40px;
+}
+
+li {
+    display: list-item;
+    list-style-type: disc;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 8px 0;
+}
+
+th,
+td {
+    line-height: 1.25;
+    vertical-align: top;
+    padding: 0.7em 0.5em 0.7em 1em;
+}
+
+th {
+    line-height: 1.25;
+    text-align: left;
+    color: #0b0c0c;
+    background-color: #dee0e2;
+    border: 2px solid black;
+}
+
+td {
+    background-color: #eaedef;
+    border: dotted 2px black;
+}
+
+tr:nth-child(odd) td {
+    background-color: white;
+}
+
+.article {
+    padding-bottom: 16px;
+}
+
+.evidence div {
+    padding: 8px 40px 4px 40px;
+    font-size: 90%;
+}
+
+.evidence {
+    padding-top: 8px;
+}
+
+.evidence li {
+    padding: 0 0 16px 0;
+    vertical-align: text-top;
+    list-style-type: none;
+}
+
+.evidence li:before,
+.pdf-input:before {
+    content: '';
+    display: inline-block;
+    border: 1px solid black;
+    width: 16px;
+    height: 16px;
+    margin-right: 12px;
+}
+
+.visually_inline {
+    padding-left: 0;
+}
+
+.visually_inline li,
+.visually_inline p {
+    display: inline;
+}
+
+.visually_inline ul {
+    padding-left: 40px;
+    margin-top: 16px;
+}
+
+.visually_inline ul li {
+    display: list-item;
+}
+
+.repeated-block {
+    list-style-type: none;
+}
+
+.footer {
+    text-align:center;
+}
+
+
+@page {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 40px 0;
+    counter-increment: page;
+
+    @top-center {
+      content: element(header);
+    }
+
+    @bottom-center {
+        content: element(footer);
+        text-align:center;
+        font-size: 90%;
+        border-top: 1px solid #A1ACB2;
+        font-family: helvetica, sans-serif;
+    }
+
+    @bottom-left {
+        font-size: 90%;
+        border-top: 1px solid #A1ACB2;
+        font-family: helvetica, sans-serif;
+        content: "";
+  }
+
+    @bottom-right {
+  font-size: 90%;
+  border-top: 1px solid #A1ACB2;
+  font-family: helvetica, sans-serif;
+  content: "Page " counter(page)" of " counter(pages);
+  padding: 0 10px;
+    }
+}
+
+@page :first {
+    padding: 0;
+}
+
+table.no-borders-additional-spacing {
+  background-color: white;
+}
+
+.table-wrapper {
+    width: 90%;
+}
+
+table.no-borders-additional-spacing th, table.no-borders-additional-spacing td {
+  background-color: white;
+  line-height: 2;
+  vertical-align: middle;
+  padding: 2em;
+  border: none;
+}
+
+table.u-with-tickers th, table.u-with-tickers td {
+  /*width: 95%;*/
+  background-color: white;
+  line-height: 2em;
+  border: 5px solid black;
+}
+
+table.u-with-tickers h4 {
+  margin: 0 0 4px 0;
+}
+
+.header {
+  padding-top: 35px;
+  clear: both;
+  min-height: 80px;
+  position: relative;
+}
+
+.header img {
+  position: absolute;
+  top: 20px;
+  left: 82%;
+}
+
+.u-three-columns {
+  padding: 20px 5px;
+}
+
+.u-three-columns:before, .u-three-columns:after {
+  content: " ";
+  display: table;
+}
+
+.u-three-columns:after {
+  clear: both;
+}
+
+.u-three-columns > div:nth-of-type(1) {
+  float: left;
+  width: 30%;
+}
+
+.u-three-columns > div:nth-of-type(2) {
+  float: left;
+  width: 35%;
+}
+
+.u-three-columns > div:nth-of-type(3) {
+  margin-left: 65%;
+}
+
+.u-three-columns.border {
+  border: 1px solid black;
+}
+
+.u-two-columns:before, .u-two-columns:after {
+  content: " ";
+  display: table;
+}
+
+.u-two-columns:after {
+  clear: both;
+}
+
+.u-two-columns > div:nth-child(1) {
+  float: left;
+  width: 50%;
+}
+
+.u-two-columns > div:nth-child(2) {
+  margin-left: 50%;
+}
+
+.u-two-columns.seventy-thirty > div:nth-child(1) {
+  width: 70%;
+}
+
+.u-two-columns.seventy-thirty > div:nth-child(2) {
+  margin-left: 70%;
+}
+
+.u-centre {
+  text-align: center;
+}
+
+.u-right {
+  text-align: right;
+}
+
+.u-ticker {
+  position: relative;
+}
+
+.u-ticker:before {
+  content: '';
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  border: 1px solid black;
+  top: 16px;
+  left: 40%;
+}
+
+.u-line-entry {
+  position: relative;
+}
+
+.u-line-entry:before {
+  content: '';
+  width: 85%;
+  position: absolute;
+  top: 17px;
+  left: 0%;
+  border-bottom: 1px solid black;
+}
+
+.u-line-entry.with-custom-positioning-2 {
+  position: relative;
+}
+
+.u-line-entry.with-custom-positioning-2:before {
+  content: '';
+  width: 85%;
+  position: absolute;
+  top: 50px;
+  left: 5%;
+  border-bottom: 1px solid black;
+}
+
+.u-line-entry.with-custom-positioning {
+  position: relative;
+}
+
+.u-line-entry.with-custom-positioning:before {
+  content: '';
+  width: 85%;
+  position: absolute;
+  top: 5px;
+  left: 1%;
+  border-bottom: 1px solid black;
+}
+
+[class^="u-icon-"], [class*="u-icon-"] {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-top: 1px;
+  *margin-right: .3em;
+  line-height: 14px;
+  vertical-align: text-top;
+  background-image: url("../images/glyphicons-halflings.png");
+  background-position: 14px 14px;
+  background-repeat: no-repeat;
+}
+
+.u-icon-ok {
+  background-position: -288px 0;
+}
+
+.padded-box {
+  margin: 10px 0 30px 0;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.padded-box > h4 {
+  font-weight: bold;
+}
+
+.photo {
+  width: 390px;
+  height: 360px;
+  background-image: url("../images/photo.png");
+}
+
+.priority {
+  width: 50%;
+  margin-left: 50%;
+  border: 1px solid black;
+  font-weight: bold;
+  line-height: 2;
+  padding: 0 8px;
+}
+
+.priority span {
+  display: inline-block;
+  width: 50%;
+  border-right: 1px solid black;
+  margin-right: 16px;
+}
+
+.questionaire td {
+  background-color: white;
+  border: none;
+}
+
+.questionaire td:nth-of-type(1) {
+  text-align: right;
+}
+
+.questionaire td:nth-of-type(2) {
+  font-weight: bold;
+}
+
+.u-avoid-page-break {
+    page-break-inside: avoid;
+}
+    </style>
+</head>
+
+<body>
+<header class="header" role="banner">UK Visas &amp; Immigration
+</header>
+<div>
+<h1>Document Checklist</h1>
+<div class="article">
+    <p>This checklist:</p>
+    <ul>
+        <li>describes the visa you have applied for;</li>
+        <li>is used to record the documents you are providing in support of your application</li>
+    </ul>
+    <p>You will be asked to sign this checklist to confirm you have provided the documents listed and understand how your application will be dealt with.</p>
+    <div class="priority"><span>Priority:</span></div>
+</div>
+<div class="article">
+    <h3>Product</h3>
+    <table class="questionaire">
+        <tbody>
+        <tr>
+            <td>Category:</td>
+            <td>the title</td>
+        </tr>
+        <tr>
+            <td>Validity period / Duration/Length of Visa:</td>
+            <td>1 year</td>
+        </tr>
+        <tr>
+            <td>Payment notification number:</td>
+            <td>pay001, pay002</td>
+        </tr>
+        <tr>
+            <td>Fee Paid:</td>
+            <td>123.45 GBP</td>
+        </tr>
+        <tr>
+            <td>Date Paid:</td>
+            <td>21/05/2014</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="article">
+    <h3>Applicant</h3>
+
+    <div class="u-two-columns seventy-thirty">
+        <div>
+            <table class="questionaire">
+                <tbody>
+                <tr>
+                    <td>Applicant's full name:</td>
+                    <td>James Hughes</td>
+                </tr>
+                <tr>
+                    <td>Date of birth:</td>
+                    <td>1997</td>
+                </tr>
+                <tr>
+                    <td>Place of birth:</td>
+                    <td>Australia</td>
+                </tr>
+                <tr>
+                    <td>Nationality:</td>
+                    <td>Albania, Australia</td>
+                </tr>
+                <tr>
+                    <td>Passport / Travel Document number:</td>
+                    <td>1234ABC</td>
+                </tr>
+                <tr>
+                    <td>Telephone number:</td>
+                    <td>+44 123456789</td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td>foo@bar.com</td>
+                </tr>
+                <tr>
+                    <td>Submitted Date:</td>
+                    <td>21 May 2014 14:56</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <div class="photo"></div>
+        </div>
+    </div>
+</div>
+
+<div class="article">
+    <h3>Documents</h3>
+    <p>All documents must be originals.</p>
+    <p>You have agreed to include the following documents in your application.</p>
+    <p>Please tick the box beside each document to confirm that you are providing that document:</p>
+    <div class="u-avoid-page-break">
+
+    <table class="u-with-tickers">
+        <colgroup>
+            <col/>
+            <col style="width: 200px;"/>
+            <col style="width: 200px;"/>
+        </colgroup>
+        <thead>
+        <tr>
+            <th class="u-right">Please tick to indicate the documents provided</th>
+            <th class="u-centre">
+                <div>Applicant</div>
+                <div><i class="u-icon-ok"></i></div>
+            </th>
+            <th class="u-centre">
+                <div>Official Use Only</div>
+                <div><i class="u-icon-ok"></i></div>
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>
+                <h4>Purpose of application (including any related arrangements).</h4>
+                <p>Evidence of arrangements made, such as:</p>
+                <p>tour details / flight details / letter of invitation / evidence of sponsors immigration status in the UK</p>
+            </td>
+            <td class="u-ticker">Tester</td>
+            <td class="u-ticker"></td>
+        </tr>
+        </tbody>
+    </table>
+    </div>
+    <p>If you do not provide your current passport and a passport photograph we will not be able to make a decision on your application. Please note that we may ask you to provide further documents at a later date. If you have a previous UK Visa in an old passport then please provide this passport also.</p>
+    <p>You may provide any documents in support of your application:</p>
+    <ul>
+        <li>All documents must be in English. Translated documents must be authorised;</li>
+        <li>Originals of documents must be provided;</li>
+        <li>Copies of each document must be provided so that they can be retained and the originals can be returned to you.</li>
+    </ul>
+    <p>Further guidance is available at <a href="http://www.gov.uk/visas-immigration">www.gov.uk/visas-immigration</a>
+    </p>
+</div>
+<div class="article">
+    <div class="u-avoid-page-break">
+    <table class="u-with-tickers">
+        <colgroup>
+            <col/>
+            <col style="width: 200px;"/>
+            <col style="width: 200px;"/>
+        </colgroup>
+        <thead>
+        <tr>
+            <th class="u-right">Please tick to indicate the documents provided</th>
+            <th class="u-centre">
+                <div>Applicant</div>
+                <div>?</div>
+            </th>
+            <th class="u-centre">
+                <div>Official Use Only</div>
+                <div>?</div>
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+
+
+        <tr>
+            <td>
+                <h4>Purpose of application (including any related arrangements).</h4>
+                <p>Evidence of arrangements made, such as:</p>
+                <p>tour details / flight details / letter of invitation / evidence of sponsors immigration status in the UK</p>
+            </td>
+            <td class="u-ticker">Tester</td>
+            <td class="u-ticker"></td>
+        </tr>
+        <tr>
+            <td>
+                <h4>Evidence of current employment</h4>
+                <p>Evidence of the employment and all income stated on application form, such as:</p>
+                <p>letter from employer / pay slips / tax returns / business registration documents / business bank account statements</p>
+            </td>
+            <td class="u-ticker"></td>
+            <td class="u-ticker"></td>
+        </tr><tr>
+            <td>
+                <h4>Evidence of current studies</h4>
+                <p>Evidence of being in education.</p>
+            </td>
+            <td class="u-ticker"></td>
+            <td class="u-ticker"></td>
+        </tr><tr>
+            <td>
+                <p>Evidence of qualifications obtained.</p>
+            </td>
+            <td class="u-ticker"></td>
+            <td class="u-ticker"></td>
+        </tr><tr>
+            <td>
+                <h4>Finances</h4>
+                <p>Evidence of your income, such as:</p>
+                <p>Bank statements / bank books / bank letter / balance certificate /  tax returns / crop receipts</p>
+            </td>
+            <td class="u-ticker"></td>
+            <td class="u-ticker"></td>
+        </tr>
+
+        <tr>
+            <td>
+                <h4>
+                    Accommodation at home
+                </h4>
+                <p>
+                    Evidence of assets like property or land, such as:
+                </p>
+                <p>
+                    Property deed / mortgage statements / tenancy agreements / accountant?s letters / land registration documents
+                </p>
+            </td>
+            <td class="u-ticker"></td>
+            <td class="u-ticker"></td>
+        </tr>
+        <tr>
+            <td>
+                <h4>
+                    Accommodation in UK
+                </h4>
+                <p>
+                    Evidence of UK accommodation and travel details, such as:
+                </p>
+                <p>
+                    Hotel booking confirmation / travel booking confirmation  / travel agent confirmation / sponsor accommodation details
+                </p>
+            </td>
+            <td class="u-ticker"></td>
+            <td class="u-ticker"></td>
+        </tr>
+
+
+        <tr>
+            <td>
+                <h4>Additional Information</h4>
+                <p>Evidence of family members remaining in your home country whilst you travel.</p>
+            </td>
+            <td class="u-ticker"></td>
+            <td class="u-ticker"></td>
+        </tr>
+        </tbody>
+    </table>
+    </div>
+</div>
+<div class="article">
+    <h3>Declaration</h3>
+    <p>Please tick the following boxes to confirm you understand the application process.</p>
+    <div class="u-three-columns border">
+        <div>
+            <h4>Date:</h4>
+            <p class="u-line-entry with-custom-positioning"></p>
+        </div>
+        <div>
+            <h4>Applicant's Name:</h4>
+            <p class="u-line-entry with-custom-positioning"></p>
+        </div>
+        <div>
+            <h4>Applicant's Signature:</h4>
+            <p class="u-line-entry with-custom-positioning"></p>
+        </div>
+    </div>
+    <p>Or</p>
+    <div class="u-three-columns border">
+        <div>
+            <h4>Date:</h4>
+            <p class="u-line-entry with-custom-positioning"></p>
+        </div>
+        <div>
+            <h4>Responsible Adult's Name:</h4>
+            <p class="u-line-entry with-custom-positioning"></p>
+        </div>
+        <div>
+            <h4>Responsible Adult's Signature:</h4>
+            <p class="u-line-entry with-custom-positioning"></p>
+        </div>
+    </div>
+    <p></p>
+    <div class="u-three-columns border">
+        <h3>Official Use Only</h3>
+        <div>
+            <h4>Date:</h4>
+            <p class="u-line-entry with-custom-positioning"></p>
+        </div>
+        <div>
+            <h4>Submission Officer's Name:</h4>
+            <p class="u-line-entry with-custom-positioning"></p>
+        </div>
+        <div>
+            <h4>Submission Officer's Signature:</h4>
+            <p class="u-line-entry with-custom-positioning"></p>
+        </div>
+    </div>
+</div>
+</div>
+<div class="article">
+    <h3>What to do next?</h3>
+    <p>Attend the offices of vfs.global: http://www.vfsglobal.co.uk/china 15 minutes before the time of your appointment.</p>
+    <p>This will be at TBC on TBC at the following location:</p>
+    <p>Wuchang District, Wuhan City, Hubei Province, 171 North Street, headquarters of the International c Han Dong 302 Zip Code: 430071</p>
+    <p>A map is available at: http://www.vfsglobal.co.uk/china/images/wuhan_map.jpeg</p>
+    <p>If you have any questions, contact</p>
+
+    <div class="padded-box">
+        <h4>China Telephone</h4>
+        <p>Local opening times: 8:00am - 4:00pm</p>
+        <p>You can call us on:</p>
+        <p><h4>0086-10-84181724 or 0086-755-86243860 or 0086-755-86243861</h4></p>
+        <p>If you would prefer to dial a UK number direct please call:</p>
+        <p><h4>00 44 1243 218 100</h4></p>
+        <p>This is a paid service and there is a cost of £1.37 UK Sterling per minute in addition to your standard network charges. Please have a valid credit or debit card ready to process your payment. We can accept Mastercard Credit and Debit cards, and Visa Credit and Debit cards. You will not be charged until you are connected to an advisor. Calls may be recorded for training purposes. We are able to handle your calls in English, Mandarin or Cantonese.</p>
+    </div>
+    Your fingerprints will be taken during your appointment unless you are under 5 years old or are exempted, such as diplomats or x,y and z.
+</div>
+</body>
+
+</html>

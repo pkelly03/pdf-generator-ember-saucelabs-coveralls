@@ -1,0 +1,16 @@
+#totalHeight {
+    right: -60px;
+    top: 125px;
+    width: 235px;
+    -webkit-transform: rotate(90deg);
+    border-bottom: 1px solid black;
+    position: absolute;
+}
+
+@page {
+    size: 8.5in 11in;
+    margin: 1in;
+    @bottom-right {
+        content:"Page " counter(page)" of " counter(pages);
+    }
+}
