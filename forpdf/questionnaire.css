@@ -11,32 +11,31 @@ table.no-borders-additional-spacing {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\0000336}}
 table.no-borders-additional-spacing th, table.no-borders-additional-spacing td {
   background-color: white;
-  line-height: 2;
   vertical-align: middle;
-  padding: 2em;
+  padding: 1em;
   border: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\0000350}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\0000349}}
 table.u-with-tickers h4 {
   margin: 0 0 4px 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\0000355}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\0000354}}
 .header {
   padding-top: 35px;
   clear: both;
   min-height: 80px;
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\0000360}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\0000359}}
 .header img {
   position: absolute;
   top: 20px;
   left: 82%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\0000366}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\0000365}}
 .u-three-columns {
   padding: 20px 5px;
 }
@@ -49,37 +48,51 @@ table.u-with-tickers h4 {
 .u-three-columns:after {
   clear: both;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\0000370}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\0000369}}
 .u-three-columns > div.first {
   float: left;
   width: 50%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\0000374}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\0000373}}
 .u-three-columns > div.second {
   float: left;
   width: 20%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\0000378}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\0000377}}
 .u-three-columns > div.third {
   margin-left: 70%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\0000381}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\0000380}}
 .u-three-columns.border {
   border: 1px solid black;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\0000385}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\0000384}}
 .u-three-columns.fifty-twenty-thirty > div.first {
   float: left;
   width: 50%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\0000389}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\0000388}}
 .u-three-columns.fifty-twenty-thirty > div.second {
   float: left;
   width: 20%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\0000393}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\0000392}}
 .u-three-columns.fifty-twenty-thirty > div.third {
   margin-left: 70%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\0000398}}
+.u-three-columns.twenty-fourty-fourty > div.first {
+  float: left;
+  width: 20%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\00003102}}
+.u-three-columns.twenty-fourty-fourty > div.second {
+  float: left;
+  width: 40%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\00003106}}
+.u-three-columns.twenty-fourty-fourty > div.third {
+  margin-left: 60%;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\0000319}}
@@ -91,51 +104,51 @@ table.u-with-tickers h4 {
 .u-two-columns:after {
   clear: both;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\00003100}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\00003114}}
 .u-two-columns > div:nth-child(1) {
   float: left;
   width: 50%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\00003104}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\00003118}}
 .u-two-columns > div:nth-child(2) {
   margin-left: 50%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\00003108}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\00003122}}
 .u-two-columns.twenty-eighty > div:nth-child(1) {
   width: 20%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\00003111}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\00003125}}
 .u-two-columns.twenty-eighty > div:nth-child(2) {
   margin-left: 20%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\00003116}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\00003130}}
 .u-two-columns.seventy-thirty > div:nth-child(1) {
   width: 70%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\00003119}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\00003133}}
 .u-two-columns.seventy-thirty > div:nth-child(2) {
   margin-left: 70%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\00003124}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\00003138}}
 .u-two-columns.sixty-fourty > div:nth-child(1) {
   width: 60%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\00003127}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\00003141}}
 .u-two-columns.sixty-fourty > div:nth-child(2) {
   margin-left: 60%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\00003132}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\00003146}}
 .u-centre {
   text-align: center;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\00003135}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\00003149}}
 .u-right {
   text-align: right;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\00003138}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\00003152}}
 .u-ticker {
   border: 1px solid black;
   width: 30px;
@@ -143,13 +156,14 @@ table.u-with-tickers h4 {
   margin: 25px 30px 25px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\00003141}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\00003155}}
 .u-line-entry {
   border-bottom: 1px solid black;
-  margin-top: 15px;
+  margin-top: 30px;
+  margin-right: 15px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\00003154}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\00003161}}
 [class^="u-icon-"], [class*="u-icon-"] {
   display: inline-block;
   width: 14px;
@@ -163,23 +177,23 @@ table.u-with-tickers h4 {
   background-repeat: no-repeat;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\00003167}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\00003174}}
 .u-icon-ok {
   background-position: -288px 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\00003171}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\00003178}}
 .padded-box {
   margin: 10px 0 30px 0;
   padding: 10px;
   border: 1px solid black;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\00003175}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\00003182}}
 .padded-box > h4 {
   font-weight: bold;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\00003180}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\00003187}}
 .photo {
   width: 390px;
   height: 360px;
@@ -187,7 +201,7 @@ table.u-with-tickers h4 {
   background-repeat: no-repeat;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\00003187}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\00003194}}
 .priority {
   width: 45%;
   margin-left: 50%;
@@ -196,7 +210,7 @@ table.u-with-tickers h4 {
   line-height: 2;
   padding: 0 8px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\00003194}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\00003201}}
 .priority span {
   display: inline-block;
   width: 50%;
@@ -204,22 +218,22 @@ table.u-with-tickers h4 {
   margin-right: 16px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\00003204}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\00003211}}
 .questionaire th,
 .questionaire td {
   vertical-align: top;
   padding: 0.3em 0.5em 0.3em 1em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\00003209}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\00003216}}
 .questionaire td {
   background-color: white;
   border: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\00003213}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\00003220}}
 .questionaire td:nth-of-type(1) {
   text-align: right;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\00003216}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\00003223}}
 .questionaire td:nth-of-type(2) {
   font-weight: bold;
 }
