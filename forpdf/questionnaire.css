@@ -1,56 +1,225 @@
-/*
-Syntax error: Invalid CSS after "        float:": expected pseudoclass or pseudoelement, was " left;"
-        on line 71 of /Users/paulkelly/Projects/ember-apps/pdf-generator-ember-saucelabs-coveralls/app/styles/questionnaire.scss
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\000032}}
+html, body {
+  font-family: helvetica, sans-serif;
+  font-size: small;
+}
 
-Backtrace:
-/Users/paulkelly/Projects/ember-apps/pdf-generator-ember-saucelabs-coveralls/app/styles/questionnaire.scss:71
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/lib/sass/../sass/scss/parser.rb:1134:in `expected'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/lib/sass/../sass/scss/parser.rb:1070:in `expected'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/lib/sass/../sass/scss/parser.rb:1052:in `expr!'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/lib/sass/../sass/scss/parser.rb:780:in `pseudo'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/lib/sass/../sass/scss/parser.rb:664:in `simple_selector_sequence'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/lib/sass/../sass/scss/parser.rb:632:in `_selector'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/lib/sass/../sass/scss/parser.rb:605:in `selector'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/lib/sass/../sass/scss/parser.rb:589:in `selector_sequence'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/lib/sass/../sass/scss/parser.rb:514:in `ruleset'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/lib/sass/../sass/scss/parser.rb:577:in `declaration_or_ruleset'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/lib/sass/../sass/scss/parser.rb:1108:in `call'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/lib/sass/../sass/scss/parser.rb:1108:in `rethrow'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/lib/sass/../sass/scss/parser.rb:578:in `declaration_or_ruleset'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/lib/sass/../sass/scss/parser.rb:540:in `block_child'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/lib/sass/../sass/scss/parser.rb:532:in `block_contents'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/lib/sass/../sass/scss/parser.rb:521:in `block'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/lib/sass/../sass/scss/parser.rb:515:in `ruleset'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/lib/sass/../sass/scss/parser.rb:539:in `block_child'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/lib/sass/../sass/scss/parser.rb:532:in `block_contents'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/lib/sass/../sass/scss/parser.rb:70:in `stylesheet'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/lib/sass/../sass/scss/parser.rb:27:in `parse'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/lib/sass/../sass/engine.rb:342:in `_to_tree'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/lib/sass/../sass/engine.rb:315:in `_render'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.3/lib/sass/../sass/engine.rb:262:in `render'
-/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:140:in `compile'
-/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:139:in `compile'
-/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/logger.rb:45:in `red'
-/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:138:in `compile'
-/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
-/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:103:in `run'
-/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `each'
-/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `run'
-/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
-/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/commands/update_project.rb:45:in `perform'
-/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/commands/base.rb:18:in `execute'
-/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/commands/project_base.rb:19:in `execute'
-/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-/Library/Ruby/Gems/1.8/gems/compass-0.12.2/bin/compass:30
-/Library/Ruby/Gems/1.8/gems/compass-0.12.2/bin/compass:44:in `call'
-/Library/Ruby/Gems/1.8/gems/compass-0.12.2/bin/compass:44
-/usr/bin/compass:23:in `load'
-/usr/bin/compass:23
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"        float:\": expected pseudoclass or pseudoelement, was \" left;\"\A         on line 71 of /Users/paulkelly/Projects/ember-apps/pdf-generator-ember-saucelabs-coveralls/app/styles/questionnaire.scss"; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\0000334}}
+table.no-borders-additional-spacing {
+  background-color: white;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\0000336}}
+table.no-borders-additional-spacing th, table.no-borders-additional-spacing td {
+  background-color: white;
+  line-height: 2;
+  vertical-align: middle;
+  padding: 2em;
+  border: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\0000350}}
+table.u-with-tickers h4 {
+  margin: 0 0 4px 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\0000355}}
+.header {
+  padding-top: 35px;
+  clear: both;
+  min-height: 80px;
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\0000360}}
+.header img {
+  position: absolute;
+  top: 20px;
+  left: 82%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\0000366}}
+.u-three-columns {
+  padding: 20px 5px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\0000319}}
+.u-three-columns:before, .u-three-columns:after {
+  content: " ";
+  display: table;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\0000323}}
+.u-three-columns:after {
+  clear: both;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\0000370}}
+.u-three-columns > div.first {
+  float: left;
+  width: 50%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\0000374}}
+.u-three-columns > div.second {
+  float: left;
+  width: 20%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\0000378}}
+.u-three-columns > div.third {
+  margin-left: 70%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\0000381}}
+.u-three-columns.border {
+  border: 1px solid black;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\0000385}}
+.u-three-columns.fifty-twenty-thirty > div.first {
+  float: left;
+  width: 50%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\0000389}}
+.u-three-columns.fifty-twenty-thirty > div.second {
+  float: left;
+  width: 20%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\0000393}}
+.u-three-columns.fifty-twenty-thirty > div.third {
+  margin-left: 70%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\0000319}}
+.u-two-columns:before, .u-two-columns:after {
+  content: " ";
+  display: table;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\0000323}}
+.u-two-columns:after {
+  clear: both;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\00003100}}
+.u-two-columns > div:nth-child(1) {
+  float: left;
+  width: 50%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\00003104}}
+.u-two-columns > div:nth-child(2) {
+  margin-left: 50%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\00003108}}
+.u-two-columns.twenty-eighty > div:nth-child(1) {
+  width: 20%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\00003111}}
+.u-two-columns.twenty-eighty > div:nth-child(2) {
+  margin-left: 20%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\00003116}}
+.u-two-columns.seventy-thirty > div:nth-child(1) {
+  width: 70%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\00003119}}
+.u-two-columns.seventy-thirty > div:nth-child(2) {
+  margin-left: 70%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\00003124}}
+.u-two-columns.sixty-fourty > div:nth-child(1) {
+  width: 60%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\00003127}}
+.u-two-columns.sixty-fourty > div:nth-child(2) {
+  margin-left: 60%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\00003132}}
+.u-centre {
+  text-align: center;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\00003135}}
+.u-right {
+  text-align: right;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\00003138}}
+.u-ticker {
+  border: 1px solid black;
+  width: 30px;
+  height: 30px;
+  margin: 25px 30px 25px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\00003141}}
+.u-line-entry {
+  border-bottom: 1px solid black;
+  margin-top: 15px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\00003154}}
+[class^="u-icon-"], [class*="u-icon-"] {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-top: 1px;
+  *margin-right: .3em;
+  line-height: 14px;
+  vertical-align: text-top;
+  background-image: url("../images/glyphicons-halflings.png");
+  background-position: 14px 14px;
+  background-repeat: no-repeat;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\00003167}}
+.u-icon-ok {
+  background-position: -288px 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\00003171}}
+.padded-box {
+  margin: 10px 0 30px 0;
+  padding: 10px;
+  border: 1px solid black;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\00003175}}
+.padded-box > h4 {
+  font-weight: bold;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\00003180}}
+.photo {
+  width: 390px;
+  height: 360px;
+  background-image: url("../images/photo2.png");
+  background-repeat: no-repeat;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\00003187}}
+.priority {
+  width: 45%;
+  margin-left: 50%;
+  border: 1px solid black;
+  font-weight: bold;
+  line-height: 2;
+  padding: 0 8px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\00003194}}
+.priority span {
+  display: inline-block;
+  width: 50%;
+  border-right: 1px solid black;
+  margin-right: 16px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\00003204}}
+.questionaire th,
+.questionaire td {
+  vertical-align: top;
+  padding: 0.3em 0.5em 0.3em 1em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\00003209}}
+.questionaire td {
+  background-color: white;
+  border: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\00003213}}
+.questionaire td:nth-of-type(1) {
+  text-align: right;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/paulkelly\/Projects\/ember-apps\/pdf-generator-ember-saucelabs-coveralls\/app\/styles\/questionnaire\.scss}line{font-family:\00003216}}
+.questionaire td:nth-of-type(2) {
+  font-weight: bold;
+}

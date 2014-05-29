@@ -66,31 +66,31 @@ table.u-with-tickers {
 .u-three-columns {
     @include clear-fix;
     padding: 20px 5px;
-    
-    > div:nth-of-type(1)
+
+    > div.first {
         float: left;
         width: 50%;
     }
-    > div:nth-of-type(2)
+    > div.second {
         float: left;
         width: 20%;
     }
-    > div:nth-of-type(3)
+    > div.third {
         margin-left: 70%;
     }
     &.border {
         border: 1px solid black;
     }
     &.fifty-twenty-thirty {
-        > div:nth-of-type(1)
+        > div.first {
             float: left;
             width: 50%;
         }
-        > div:nth-of-type(2)
+        > div.second {
             float: left;
             width: 20%;
         }
-        > div:nth-of-type(3)
+        > div.third {
             margin-left: 70%;
         }
     }
@@ -141,7 +141,7 @@ table.u-with-tickers {
 .u-line-entry {
     border-bottom: 1px solid black; 
     margin-top: 15px;
-
+    // width: 80%;
     // @include line-entry(0%, 17px);
     // &.with-custom-positioning-2 {
     //     @include line-entry(5%, 50px)
