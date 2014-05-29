@@ -1,7 +1,7 @@
 Whats next:
  ✔ Get rid of blank page - whats going on there - must have an additional div element in there. @done (14-05-29 15:25)
- ☐ For official use should be centered and bold
- ☐ Bold text in the first paragraphs
+ ✔ Bold text in the first paragraphs @done (14-05-29 15:35)
+ ✔ For official use should be centered and bold @done (14-05-29 15:38)
  ☐ Need to inject GWF number to footer
  ☐ Need to inject Name to footer
 
