@@ -41,6 +41,14 @@ ul {
     position: running(footer);
 }
 
+[role=content-info-document-number] {
+    position: running(footer-span);
+}
+
+[role=content-info-name] {
+    position: running(footer-span);
+}
+
 address {
     padding-bottom: 16px;
     padding-left: 16px;
@@ -162,7 +170,7 @@ tr:nth-child(odd) td {
 @page {
     margin-left: 0;
     margin-right: 0;
-    padding: 40px 0;
+    padding: 80px 0;
     counter-increment: page;
 
     @top-center {
@@ -181,7 +189,7 @@ tr:nth-child(odd) td {
         font-size: 90%;
         border-top: 1px solid #A1ACB2;
         font-family: helvetica, sans-serif;
-        content: "";
+        content: element(footer-span);
     }
 
     @bottom-right {

@@ -1,15 +1,27 @@
 Whats next:
- ☐ Look at getting an image for the pdf, do this yourself and incorporate into spike
- ☐ Get images going on the main app
- ☐ Get barcode into spike - <div class="article"><img style="width:255px; height:79px" src={barcodeUrl} /></div>
- ☐ Run glyphicons by mike 
- ☐ Page break stuff - whats the story with it
+ ✔ Get rid of blank page - whats going on there - must have an additional div element in there. @done (14-05-29 15:25)
+ ☐ For official use should be centered and bold
+ ☐ Bold text in the first paragraphs
+ ☐ Need to inject GWF number to footer
+ ☐ Need to inject Name to footer
 
- ✔ Add istanbul support @done (14-05-20 14:14)
- ✔ Get first page of template going @done (14-05-20 14:14)
- ✔ Push to coveralls @done (14-05-20 14:14)
- ✔ Saucelabs support @done (14-05-20 14:14)
- ✔ Bring in your maven project to get saucelabs support @done (14-05-20 14:14)
- ✔ Investigate the saucelabs javascript curl support @done (14-05-20 14:14)
- ✔ Add Travis support @done (14-05-14 11:39)
- ✔ Push to digital ocean @done (14-05-20 14:14)
+
+
+＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
+Archive:
+ ✔ Need header on every page. @done (14-05-29 15:16) @project(Whats next)
+ ✔ Do page breaks ok @done (14-05-29 15:21) @project(Whats next)
+ ✔ Look at getting an image for the pdf, do this yourself and incorporate into spike @done (14-05-29 11:39) @project(Whats next)
+ ✔ Get images going on the main app @done (14-05-29 11:39) @project(Whats next)
+ ✔ Get barcode into spike - <div class="article"><img style="width:255px; height:79px" src={barcodeUrl} /></div> @done (14-05-29 11:39) @project(Whats next)
+ ✔ Run glyphicons by mike @done (14-05-29 11:39) @project(Whats next)
+ ✔ Page break stuff - whats the story with it @done (14-05-29 11:39) @project(Whats next)
+ ✔ Add istanbul support @done (14-05-20 14:14) @project(Whats next)
+ ✔ Get first page of template going @done (14-05-20 14:14) @project(Whats next)
+ ✔ Push to coveralls @done (14-05-20 14:14) @project(Whats next)
+ ✔ Saucelabs support @done (14-05-20 14:14) @project(Whats next)
+ ✔ Bring in your maven project to get saucelabs support @done (14-05-20 14:14) @project(Whats next)
+ ✔ Investigate the saucelabs javascript curl support @done (14-05-20 14:14) @project(Whats next)
+ ✔ Add Travis support @done (14-05-14 11:39) @project(Whats next)
+ ✔ Push to digital ocean @done (14-05-20 14:14) @project(Whats next)
+ ✔ Bold text @done (14-05-29 11:39) @project(Whats next)
