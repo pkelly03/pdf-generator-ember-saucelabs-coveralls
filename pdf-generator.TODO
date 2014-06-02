@@ -1,9 +1,18 @@
 Whats next:
+ ☐ Move 
+ ✔ Footer not on every page @done (14-05-30 15:13)
+ ✔ Get rid of blank page on 2nd page @done (14-05-30 15:13)
+ ✔ Get rid of page:first and make sure it hasn't broken last coversheet. @done (14-05-30 15:13)
+ ✔ Get rid of all roles. Not allowed change or add new ones. @done (14-05-30 15:13)
+ ☐ Make sure you haven't broken anything else on other coversheet
+ ☐ Go through word for word to ensure all is ok with acceptance criteria
+
+ ✔ Fix font in footer @done (14-05-30 11:34)     
  ✔ Get rid of blank page - whats going on there - must have an additional div element in there. @done (14-05-29 15:25)
  ✔ Bold text in the first paragraphs @done (14-05-29 15:35)
  ✔ For official use should be centered and bold @done (14-05-29 15:38)
- ☐ Need to inject GWF number to footer
- ☐ Need to inject Name to footer
+ ✔ Need to inject GWF number to footer @done (14-05-30 09:28)
+ ✔ Need to inject Name to footer @done (14-05-30 09:28)
 
 
 
@@ -12,6 +21,7 @@ Archive:
  ✔ Need header on every page. @done (14-05-29 15:16) @project(Whats next)
  ✔ Do page breaks ok @done (14-05-29 15:21) @project(Whats next)
  ✔ Look at getting an image for the pdf, do this yourself and incorporate into spike @done (14-05-29 11:39) @project(Whats next)
+ ☐ 
  ✔ Get images going on the main app @done (14-05-29 11:39) @project(Whats next)
  ✔ Get barcode into spike - <div class="article"><img style="width:255px; height:79px" src={barcodeUrl} /></div> @done (14-05-29 11:39) @project(Whats next)
  ✔ Run glyphicons by mike @done (14-05-29 11:39) @project(Whats next)

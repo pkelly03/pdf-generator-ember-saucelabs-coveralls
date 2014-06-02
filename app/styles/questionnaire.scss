@@ -1,8 +1,7 @@
 html, body {
     font-family: helvetica, sans-serif;
-    font-size: small; 
+    font-size: small;
 }
-
 @mixin no-bullets {
     list-style: none;
     li {
@@ -24,12 +23,11 @@ html, body {
     }
 }
 @mixin ticker($size) {
-    border: 1px solid black; 
-    width: 30px; 
-    height: 30px; 
+    border: 1px solid black;
+    width: 30px;
+    height: 30px;
     margin: 25px 30px 25px;
 }
-
 table.no-borders-additional-spacing {
     background-color: white;
     th, td {
@@ -39,26 +37,23 @@ table.no-borders-additional-spacing {
         border: none;
     }
 }
-
 .header {
     padding-top:35px;
     clear: both;
     min-height: 70px;
     img {
         position: absolute;
-        top: 30px;
+        top: 15px;
         left: 70%;
     }
 }
 .u-three-columns {
     @include clear-fix;
     padding: 20px 5px;
-
     > h3 {
         text-align: center;
         font-weight: bold;
     }
-
     > div.first {
         float: left;
         width: 50%;
@@ -86,7 +81,6 @@ table.no-borders-additional-spacing {
             margin-left: 70%;
         }
     }
-
     &.twenty-fourty-fourty {
         > div.first {
             float: left;
@@ -100,7 +94,6 @@ table.no-borders-additional-spacing {
             margin-left: 60%;
         }
     }
-
 }
 .u-two-columns {
     @include clear-fix;
@@ -146,11 +139,10 @@ table.no-borders-additional-spacing {
     @include ticker(30px);
 }
 .u-line-entry {
-    border-bottom: 1px solid black; 
+    border-bottom: 1px solid black;
     margin-top: 30px;
     margin-right: 15px;
 }
-
 [class^="u-icon-"], [class*="u-icon-"] {
     display:inline-block;
     width:14px;
@@ -163,11 +155,9 @@ table.no-borders-additional-spacing {
     background-position:14px 14px;
     background-repeat:no-repeat
 }
-
 .u-icon-ok {
     background-position:-288px 0;
 }
-
 .padded-box {
     margin: 10px 0 30px 0;
     padding: 10px;
@@ -176,14 +166,12 @@ table.no-borders-additional-spacing {
         font-weight: bold;
     }
 }
-
 .photo {
     width: 390px;
     height: 360px;
     background-image: url("../images/photo2.png");
     background-repeat: no-repeat;
 }
-
 .priority {
     width: 45%;
     margin-left: 50%;
@@ -198,10 +186,8 @@ table.no-borders-additional-spacing {
         margin-right: 16px;
     }
 }
-
 .questionaire {
-    th,
-    td {
+    th, td {
         vertical-align: top;
         padding: 0.3em 0.5em 0.3em 1em;
     }
@@ -214,6 +200,34 @@ table.no-borders-additional-spacing {
     }
     td.answer {
         font-weight: bold;
+    }
+}
+
+div.footer {
+    .gwf-id {
+        position: running(gwf-id);
+    }
+
+    .cover-sheet-applicant-name {
+        position: running(cover-sheet-applicant-name);
+    }
+}
+
+@page {
+    
+    @bottom-left {
+        font-family: helvetica, sans-serif;
+        border-top: 1px solid #A1ACB2;
+        content: element(gwf-id);
+        font-size: 90%;
+        text-align:left;
+    }
+
+    @bottom-center {
+        font-family: helvetica, sans-serif;
+        border-top: 1px solid #A1ACB2;
+        content: element(cover-sheet-applicant-name);
+        font-size: 90%;
     }
 }
 

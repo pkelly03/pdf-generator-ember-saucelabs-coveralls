@@ -41,14 +41,6 @@ ul {
     position: running(footer);
 }
 
-[role=content-info-document-number] {
-    position: running(footer-span);
-}
-
-[role=content-info-name] {
-    position: running(footer-span);
-}
-
 address {
     padding-bottom: 16px;
     padding-left: 16px;
@@ -166,41 +158,33 @@ tr:nth-child(odd) td {
     page-break-before: always;
 }
 
-
 @page {
+    counter-increment: page;
     margin-left: 0;
     margin-right: 0;
     padding: 80px 0;
-    counter-increment: page;
+    font-family: helvetica, sans-serif;
 
     @top-center {
         content: element(header);
     }
 
     @bottom-center {
-        content: element(footer);
-        text-align:center;
-        font-size: 90%;
-        border-top: 1px solid #A1ACB2;
         font-family: helvetica, sans-serif;
-    }
-
-    @bottom-left {
-        font-size: 90%;
         border-top: 1px solid #A1ACB2;
-        font-family: helvetica, sans-serif;
-        content: element(footer-span);
+        content: element(content-info-name, first);
+        font-size: 90%;
     }
 
     @bottom-right {
-    font-size: 90%;
-    border-top: 1px solid #A1ACB2;
-    font-family: helvetica, sans-serif;
-    content: "Page " counter(page)" of " counter(pages);
-    padding: 0 10px;
+        font-family: helvetica, sans-serif;
+        border-top: 1px solid #A1ACB2;
+        content: "Page " counter(page)" of " counter(pages);
+        font-size: 90%;
+        padding: 0 10px;
     }
 }
 
 @page :first {
-    padding: 0;
+    /*padding: 0;*/
 }
